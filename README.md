@@ -1,5 +1,8 @@
 # NHN-Academy
 
+![image](https://github.com/ssstopeun/NHN-Academy/assets/68415975/3b9b9ad3-2b1c-4c2d-af15-3defde798855)
+
+
 | 주차 | 날짜 | 내용 |
 | --- | --- | --- |
 | 0주차 - Coding Test | 2023.12.18 (수) | 코딩테스트 - 유리수 계산기 |
