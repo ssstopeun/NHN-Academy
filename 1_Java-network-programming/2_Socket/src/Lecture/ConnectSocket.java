@@ -1,3 +1,5 @@
+package Lecture;
+
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
@@ -13,10 +15,7 @@ public class ConnectSocket {
 
             socket.getOutputStream().write("hello".getBytes());
 
-            byte[] buffer = new byte[256];
-            int length = socket.getInputStream().read(buffer);
-            System.out.println("Receivd : "+length);
-            System.out.println("Data : "+ new String(Arrays.copyOf(buffer,5)));
+
 
 
             socket.close();
