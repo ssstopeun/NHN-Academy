@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="StudentManagment2" />
         <module name="StudentManagment" />
+        <module name="StudentManagment2_FrontServlet" />
       </profile>
     </annotationProcessing>
   </component>

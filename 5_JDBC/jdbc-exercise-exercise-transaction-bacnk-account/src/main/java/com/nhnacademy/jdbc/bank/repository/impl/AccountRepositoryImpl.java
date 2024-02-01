@@ -20,11 +20,11 @@ public class AccountRepositoryImpl implements AccountRepository {
             preparedStatement.setLong(1,accountNumber);
             ResultSet resultSet = preparedStatement.executeQuery();
             if(resultSet.next()){
-                Account account = new Account(resultSet.getLong("account_number"),resultSet.getString("name"),resultSet.getLong("account"));
+                Account account = new Account(resultSet.getLong("account_number"),resultSet.getString("name"),resultSet.getLong("balance"));
                 return Optional.of(account);
             }
         }catch(SQLException e){
-            log.error("Error findByAccountNumber : {}",e.getMessage());
+            throw new RuntimeException(e);
         }
 
         return Optional.empty();
@@ -40,9 +40,8 @@ public class AccountRepositoryImpl implements AccountRepository {
             preparedStatement.setLong(3,account.getBalance());
             return preparedStatement.executeUpdate();
         }catch(SQLException e){
-            log.error("Error save : {}",e.getMessage());
+            throw new RuntimeException(e);
         }
-        return 0;
     }
 
     @Override
@@ -52,12 +51,12 @@ public class AccountRepositoryImpl implements AccountRepository {
         String sql = "select count(*) from jdbc_account where account_number = ?";
         try(PreparedStatement preparedStatement = connection.prepareStatement(sql)){
             preparedStatement.setLong(1,accountNumber);
-            ResultSet resultSet = preparedStatement.getResultSet();
+            ResultSet resultSet = preparedStatement.executeQuery();
             if(resultSet.next()){
                 count = resultSet.getInt(1);
             }
         }catch(SQLException e){
-            log.error("Error countByAccountNumber : {}",e.getMessage());
+            throw new RuntimeException(e);
         }
         return count;
     }
@@ -71,9 +70,8 @@ public class AccountRepositoryImpl implements AccountRepository {
             preparedStatement.setLong(2,accountNumber);
             return preparedStatement.executeUpdate();
         }catch(SQLException e){
-            log.error("Error deposit : {}",e.getMessage());
+            throw new RuntimeException(e);
         }
-        return 0;
     }
 
     @Override
@@ -85,9 +83,8 @@ public class AccountRepositoryImpl implements AccountRepository {
             preparedStatement.setLong(2,accountNumber);
             return preparedStatement.executeUpdate();
         }catch(SQLException e){
-            log.error("Error withdraw : {}",e.getMessage());
+            throw new RuntimeException(e);
         }
-        return 0;
     }
 
     @Override
@@ -98,8 +95,7 @@ public class AccountRepositoryImpl implements AccountRepository {
             preparedStatement.setLong(1,accountNumber);
             return preparedStatement.executeUpdate();
         }catch(SQLException e){
-            log.error("Error deleteByAccountNumber : {}",e.getMessage());
+            throw new RuntimeException(e);
         }
-        return 0;
     }
 }
