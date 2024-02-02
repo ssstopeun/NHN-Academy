@@ -1,4 +1,4 @@
-package com.nhnacademy.Login;
+package com.nhnacademy.File.Login;
 
 import com.nhnacademy.Servlet.BeautifyServlet;
 import lombok.extern.slf4j.Slf4j;

@@ -10,140 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ba12b98-3463-4f82-bced-b295caa3d45f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../hello/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/StudentManagment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Filter/CharacterEncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Listener/WebApplicationListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/LocalDateTimeFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/RequestDispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Servlet/ErrorServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Servlet/FrontServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Servlet/StudentDeleteServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Servlet/StudentListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Servlet/StudentRegistserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Servlet/StudentUpdateServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Servlet/StudentViewServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Student/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/Student/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/repository/MapStudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/java/com/nhnacademy/repository/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/webapp/WEB-INF/tld/customTagLibrary.tld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/webapp/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/webapp/error/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/webapp/error/exception.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/webapp/student/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/webapp/student/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/src/main/webapp/student/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Filter/CharacterEncodingFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Listener/WebApplicationListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/LocalDateTimeFunction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/RequestDispatcher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Servlet/ErrorServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Servlet/StudentDeleteServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Servlet/StudentListServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Servlet/StudentRegistserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Servlet/StudentUpdateServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Servlet/StudentViewServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Student/Gender.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Student/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/repository/MapStudentRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/repository/StudentRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/lib/commons-math3-3.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/lib/jakarta.el-api-3.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/lib/jakarta.servlet.jsp.jstl-1.2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-1.2.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/lib/lombok-1.18.26.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.32.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/tld/customTagLibrary.tld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/error/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/error/exception.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/student/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/student/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/student/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/Filter/CharacterEncodingFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/Listener/WebApplicationListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/LocalDateTimeFunction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/RequestDispatcher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/Servlet/ErrorServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/Servlet/StudentDeleteServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/Servlet/StudentListServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/Servlet/StudentRegistserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/Servlet/StudentUpdateServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/Servlet/StudentViewServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/Student/Gender.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/Student/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/repository/MapStudentRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/repository/StudentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/JavaProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/lib/calculator.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/out/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/out/com/nhnacademy/hello/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/out/com/nhnacademy/hello/util/Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/out/hello.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/out/production/JavaProject/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/out/production/JavaProject/com/nhnacademy/hello/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/src/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaProject/src/com.nhnacademy.hello/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/.idea/artifacts/hello_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/.idea/hello.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/.idea/libraries/Validation_API_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/lib/validation-api-2.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/nhnacademy/Beauitify/BeautifyServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/nhnacademy/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/nhnacademy/Multi/MultiServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/nhnacademy/ServletConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/nhnacademy/hello/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/src/main/webapp/beautify.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/src/main/webapp/multi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/classes/com/nhnacademy/Beauitify/BeautifyServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/classes/com/nhnacademy/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/Student-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/classes/com/nhnacademy/Multi/MultiServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/classes/com/nhnacademy/ServletConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/classes/com/nhnacademy/hello/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/hello-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/out/artifacts/StudentManagment_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/hello-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Beauitify/BeautifyServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/hello-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment2/target/classes/com/nhnacademy/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/hello-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/Multi/MultiServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/hello-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/ServletConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/hello-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/hello/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/hello-1.0-SNAPSHOT/WEB-INF/lib/jsoup-1.15.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/hello-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/hello-1.0-SNAPSHOT/beautify.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/hello-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hello/target/hello-1.0-SNAPSHOT/multi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment3_Command/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/StudentManagment3_Command/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4_java-servlet-jsp/hello/src/main/java/com/nhnacademy/Login/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/hello/src/main/java/com/nhnacademy/File/Login/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4_java-servlet-jsp/hello/src/main/java/com/nhnacademy/Login/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../4_java-servlet-jsp/hello/src/main/java/com/nhnacademy/File/Login/LogoutServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +56,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/Desktop/pre_project/NHN-Academy/4_java-servlet-jsp/StudentManagment",
+    "last_opened_file_path": "C:/Users/User/Desktop/pre_project/NHN-Academy/3_java-dev-setting/StudentManagment",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -306,6 +175,7 @@
       <updated>1706153402324</updated>
       <workItem from="1706153403869" duration="25706000" />
       <workItem from="1706245876592" duration="72000" />
+      <workItem from="1706837004326" duration="69000" />
     </task>
     <servers />
   </component>

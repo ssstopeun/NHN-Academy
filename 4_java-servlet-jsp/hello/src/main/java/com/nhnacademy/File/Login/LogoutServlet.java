@@ -1,4 +1,4 @@
-package com.nhnacademy.Login;
+package com.nhnacademy.File.Login;
 
 import com.nhnacademy.util.CookieUtils;
 
