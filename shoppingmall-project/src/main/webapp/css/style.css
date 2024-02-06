@@ -1,0 +1,20 @@
+.custom-header{
+    background-color : #e9d7f8;
+    color : black;
+}
+.signup-button{
+    background-color: #d9baf2;
+    border-color:black
+}
+.login-button{
+    background-color: #e9d7f8;
+    border-color:black;
+}
+.signup-form-signup-button{
+    background-color : #e9d7f8;
+    color : black;
+}
+.logout-button{
+    background-color: #d9baf2;
+    border-color:black
+}
