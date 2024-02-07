@@ -2,19 +2,22 @@
     background-color : #e9d7f8;
     color : black;
 }
+
+.logout-button,
 .signup-button{
     background-color: #d9baf2;
     border-color:black
 }
-.login-button{
-    background-color: #e9d7f8;
-    border-color:black;
-}
+
+.login-button,
 .signup-form-signup-button{
     background-color : #e9d7f8;
-    color : black;
 }
-.logout-button{
-    background-color: #d9baf2;
-    border-color:black
+
+.error_message {
+    color: red;
+    text-decoration: none;
+    display: block; /* 또는 inline-block */
+    margin: 0 auto;
+    text-align: center; /* 부모 요소에 적용 */
 }

@@ -18,6 +18,10 @@ public class LoginController implements BaseController {
             return "redirect:/index.do";
         }
 
+        if(req.getQueryString()!=null&&req.getQueryString().equals("error=login_fail")){
+            req.setAttribute("error_message",  "아이디 또는 비밀번호가 틀렸습니다.");
+        }
+
         return "shop/login/login_form";
     }
 }

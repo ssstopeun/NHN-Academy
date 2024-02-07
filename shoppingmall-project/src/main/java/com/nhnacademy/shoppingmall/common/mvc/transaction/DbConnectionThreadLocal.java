@@ -50,6 +50,7 @@ public class DbConnectionThreadLocal {
             if(getSqlError()){ //todo#2-5 getSqlError() 에러가 존재하면 rollback 합니다.
                 log.info("getSqlError");
             }else{ //todo#2-6 getSqlError() 에러가 존재하지 않다면 commit 합니다.
+                connection.commit();
                 log.info("commit");
             }
             connection.close();

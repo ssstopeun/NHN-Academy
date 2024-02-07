@@ -7,9 +7,12 @@ import com.nhnacademy.shoppingmall.user.service.UserService;
 import com.nhnacademy.shoppingmall.user.service.impl.UserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
 
 @Slf4j
 @RequestMapping(method = RequestMapping.Method.POST,value = "/loginAction.do")
@@ -18,7 +21,7 @@ public class LoginPostController implements BaseController {
     private final UserService userService = new UserServiceImpl(new UserRepositoryImpl());
 
     @Override
-    public String execute(HttpServletRequest req, HttpServletResponse resp) {
+    public String execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //todo#13-2 로그인 구현, session은 60분동안 유지됩니다.
         String userId = req.getParameter("user_id");
         String userPassword = req.getParameter("user_password");
@@ -32,10 +35,9 @@ public class LoginPostController implements BaseController {
 
         } catch (Exception e) {
             log.info("fail login");
-            req.setAttribute("error_message","fail login");
-            throw new RuntimeException(e);
+            return "redirect:/login.do?error=login_fail";
         }
 
-        return "shop/main/index";
+        return "redirect:/index.do";
     }
 }
