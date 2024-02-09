@@ -4,7 +4,14 @@
 
 <div style="margin: auto; width: 400px;">
     <div class="p-2">
-        <form method="post" action="/loginAction.do">
+        <c:choose>
+            <c:when test="${not empty returnUrl}">
+                <form method="post" action="/loginAction.do?returnUrl=/mypage.do">
+            </c:when>
+            <c:otherwise>
+                <form method="post" action="/loginAction.do">
+            </c:otherwise>
+        </c:choose>
 
             <h1 class="h3 mb-3 fw-normal text-center">로그인</h1>
             <c:if test = "${not empty error_message}">

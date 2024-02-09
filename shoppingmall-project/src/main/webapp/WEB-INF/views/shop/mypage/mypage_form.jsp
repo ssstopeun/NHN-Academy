@@ -2,7 +2,7 @@
 <div class="col-lg-2 nav-col-lg-2">
     <h2 class="my-4 nav-title">My Page</h2>
     <div class="list-group">
-        <a href="/myPage/userModify" class="list-group-item ">개인정보 수정</a>
+        <a href="/mypage/usermodify.do" class="list-group-item ">개인정보 수정</a>
         <a href="/myPage/basket" class="list-group-item">장바구니</a>
         <a href="/myPage/order/list" class="list-group-item">주문 목록</a>
         <a href="/myPage/order/cancel" class="list-group-item">취소 내역</a>

@@ -20,7 +20,8 @@ public class LoginCheckFilter extends HttpFilter {
         HttpSession session = req.getSession(false);
         User user = (User) session.getAttribute("user");
         if(session==null||user==null){
-            res.sendRedirect("/login.do");
+            String returnUrl = req.getRequestURI();
+            res.sendRedirect("/login.do?returnUrl=/mypage.do");
         }else{
             chain.doFilter(req,res);
         }

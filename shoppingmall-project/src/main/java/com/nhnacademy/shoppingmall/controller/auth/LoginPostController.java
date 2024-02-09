@@ -32,8 +32,15 @@ public class LoginPostController implements BaseController {
             httpSession.setAttribute("user_id",userId);
             httpSession.setAttribute("user",userService.getUser(userId).get());
 
+            if(req.getQueryString()!=null&&req.getQueryString().equals("returnUrl=/mypage.do")){
+                return "redirect:/mypage.do";
+            }
+
         } catch (Exception e) {
             log.info("fail login");
+            if(req.getQueryString()!=null&&req.getQueryString().equals("returnUrl=/mypage.do")){
+                return "redirect:/login.do?error=login_fail&returnUrl=/mypage.do";
+            }
             return "redirect:/login.do?error=login_fail";
         }
 
