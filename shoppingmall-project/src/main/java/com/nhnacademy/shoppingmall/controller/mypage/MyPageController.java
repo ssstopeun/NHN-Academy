@@ -13,6 +13,6 @@ public class MyPageController implements BaseController {
 
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        return null;
+        return "shop/mypage/mypage_form";
     }
 }

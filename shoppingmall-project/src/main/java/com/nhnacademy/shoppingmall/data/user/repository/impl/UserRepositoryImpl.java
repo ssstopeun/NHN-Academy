@@ -1,11 +1,10 @@
-package com.nhnacademy.shoppingmall.user.repository.impl;
+package com.nhnacademy.shoppingmall.data.user.repository.impl;
 
 import com.nhnacademy.shoppingmall.common.mvc.transaction.DbConnectionThreadLocal;
-import com.nhnacademy.shoppingmall.user.domain.User;
-import com.nhnacademy.shoppingmall.user.repository.UserRepository;
+import com.nhnacademy.shoppingmall.data.user.domain.User;
+import com.nhnacademy.shoppingmall.data.user.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 
-import javax.xml.transform.Result;
 import java.sql.*;
 import java.time.LocalDateTime;
 import java.util.Objects;

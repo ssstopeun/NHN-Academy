@@ -1,10 +1,10 @@
 package com.nhnacademy.shoppingmall.common.listener;
 
 import com.nhnacademy.shoppingmall.common.mvc.transaction.DbConnectionThreadLocal;
-import com.nhnacademy.shoppingmall.user.domain.User;
-import com.nhnacademy.shoppingmall.user.repository.impl.UserRepositoryImpl;
-import com.nhnacademy.shoppingmall.user.service.UserService;
-import com.nhnacademy.shoppingmall.user.service.impl.UserServiceImpl;
+import com.nhnacademy.shoppingmall.data.user.domain.User;
+import com.nhnacademy.shoppingmall.data.user.repository.impl.UserRepositoryImpl;
+import com.nhnacademy.shoppingmall.data.user.service.UserService;
+import com.nhnacademy.shoppingmall.data.user.service.impl.UserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.ServletContext;

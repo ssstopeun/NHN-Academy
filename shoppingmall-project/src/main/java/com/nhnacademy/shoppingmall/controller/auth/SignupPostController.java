@@ -2,13 +2,12 @@ package com.nhnacademy.shoppingmall.controller.auth;
 
 import com.nhnacademy.shoppingmall.common.mvc.annotation.RequestMapping;
 import com.nhnacademy.shoppingmall.common.mvc.controller.BaseController;
-import com.nhnacademy.shoppingmall.user.domain.User;
-import com.nhnacademy.shoppingmall.user.repository.impl.UserRepositoryImpl;
-import com.nhnacademy.shoppingmall.user.service.UserService;
-import com.nhnacademy.shoppingmall.user.service.impl.UserServiceImpl;
+import com.nhnacademy.shoppingmall.data.user.domain.User;
+import com.nhnacademy.shoppingmall.data.user.repository.impl.UserRepositoryImpl;
+import com.nhnacademy.shoppingmall.data.user.service.UserService;
+import com.nhnacademy.shoppingmall.data.user.service.impl.UserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

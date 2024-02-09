@@ -1,6 +1,6 @@
 package com.nhnacademy.shoppingmall.common.filter;
 
-import com.nhnacademy.shoppingmall.user.domain.User;
+import com.nhnacademy.shoppingmall.data.user.domain.User;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.*;
@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.Optional;
 
 @Slf4j
 @WebFilter(filterName = "AdminCheckFilter",urlPatterns = "/admin/*")

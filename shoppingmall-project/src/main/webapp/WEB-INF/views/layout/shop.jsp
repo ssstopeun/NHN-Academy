@@ -1,9 +1,9 @@
-<%@ page import="com.nhnacademy.shoppingmall.user.domain.User" %>
+<%@ page import="com.nhnacademy.shoppingmall.data.user.domain.User" %>
 <%@ page import="java.util.Objects" %>
-<%@ page import="com.nhnacademy.shoppingmall.user.service.UserService" %>
-<%@ page import="com.nhnacademy.shoppingmall.user.repository.UserRepository" %>
-<%@ page import="com.nhnacademy.shoppingmall.user.repository.impl.UserRepositoryImpl" %>
-<%@ page import="com.nhnacademy.shoppingmall.user.service.impl.UserServiceImpl" %>
+<%@ page import="com.nhnacademy.shoppingmall.data.user.service.UserService" %>
+<%@ page import="com.nhnacademy.shoppingmall.data.user.repository.UserRepository" %>
+<%@ page import="com.nhnacademy.shoppingmall.data.user.repository.impl.UserRepositoryImpl" %>
+<%@ page import="com.nhnacademy.shoppingmall.data.user.service.impl.UserServiceImpl" %>
 <%@ page import="java.util.Optional" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" session="true" trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

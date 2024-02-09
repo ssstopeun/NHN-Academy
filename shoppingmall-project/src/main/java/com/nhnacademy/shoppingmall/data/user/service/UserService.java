@@ -1,6 +1,6 @@
-package com.nhnacademy.shoppingmall.user.service;
+package com.nhnacademy.shoppingmall.data.user.service;
 
-import com.nhnacademy.shoppingmall.user.domain.User;
+import com.nhnacademy.shoppingmall.data.user.domain.User;
 
 import java.util.Optional;
 

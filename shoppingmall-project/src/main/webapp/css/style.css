@@ -1,3 +1,7 @@
+@font-face{
+    font-family : 'Nanum';
+    src: url('./resources/fonts/NanumPenScript-Regular.woff') format('woff');
+}
 .custom-header{
     background-color : #e9d7f8;
     color : black;
@@ -20,4 +24,15 @@
     display: block; /* 또는 inline-block */
     margin: 0 auto;
     text-align: center; /* 부모 요소에 적용 */
+}
+.mypage-list{
+    display: flex;
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 40px;
+}
+.mypage-left-section{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
 }
