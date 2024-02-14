@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- annotation설정을 위해 추가-->
+    <context:annotation-config/>
+
+
+    <bean id="englishGreeter" class="com.nhnacademy.edu.springframework.greeter.EnglishGreeter" scope="singleton">
+    </bean>
+
+    <bean id="koreanGreeter" class="com.nhnacademy.edu.springframework.greeter.KoreanGreeter" scope="prototype" >
+    </bean>
+
+    <bean id="smsMessageSender" class="com.nhnacademy.edu.springframework.sender.SmsMessageSender" scope="prototype" init-method="init" destroy-method="cleanup">
+    </bean>
+
+<!--    <bean id="emailMessageSender" class="com.nhnacademy.edu.springframework.sender.EmailMessageSender" init-method="init" destroy-method="cleanup">-->
+<!--    </bean>-->
+
+    <bean id="messageSendService" class="com.nhnacademy.edu.springframework.sender.MessageSendService" autowire="byName" >
+<!--        <constructor-arg ref="smsMessageSender"/>-->
+    </bean>
+
+
+</beans>
