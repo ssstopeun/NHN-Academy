@@ -3,7 +3,7 @@
 ![image](https://github.com/ssstopeun/NHN-Academy/assets/68415975/3b9b9ad3-2b1c-4c2d-af15-3defde798855)
 
 
-[Study Summary]([https://www.notion.so/cc0dc1c8bdf44c34b726b63d4b48d5c4?v=69b600bd701c46879fd2eeae9834f209](https://www.notion.so/cc0dc1c8bdf44c34b726b63d4b48d5c4?v=8377bf71285a4f59885ba273308648b0))
+[Study Summary](https://www.notion.so/cc0dc1c8bdf44c34b726b63d4b48d5c4?v=69b600bd701c46879fd2eeae9834f209)
 
 | 주차 | 날짜 | 내용 |
 | --- | --- | --- |
