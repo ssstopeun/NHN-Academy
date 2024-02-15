@@ -1,4 +1,4 @@
-package com.nhnacademy.edu.springframework;ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml")
+package com.nhnacademy.edu.springframework;
 
 import com.nhnacademy.edu.springframework.greeter.Greeter;
 import com.nhnacademy.edu.springframework.greeter.GreetingService;
@@ -14,7 +14,7 @@ public class Main {
         User user = new User(email, phoneNumber);
         String message = "hello world!";
 
-        try () {
+        try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml")) {
 //            System.out.println("---------");
 //            new GreetingService(context.getBean("koreanGreeter", Greeter.class)).greet();
 //            System.out.println("---------");
@@ -37,9 +37,12 @@ public class Main {
 //            new MessageSendService(smsMessageSender2).doSendMessage(user, message);
 //            new MessageSendService(emailMessageSender).doSendMessage(user, message);
 //            new MessageSendService(emailMessageSender2).doSendMessage(user, message);
+//
+//            MessageSendService messageSendService = context.getBean("messageSendService", MessageSendService.class);
+//            messageSendService.doSendMessage(user,"jieun");
 
-            MessageSendService messageSendService = context.getBean("messageSendService", MessageSendService.class);
-            messageSendService.doSendMessage(user,"jieun");
+            GreetingService greetingService = context.getBean("greetingService", GreetingService.class);
+            greetingService.greet();
         }
     }
 }
