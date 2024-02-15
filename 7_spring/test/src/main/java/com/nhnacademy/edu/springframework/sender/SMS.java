@@ -1,4 +1,4 @@
-package com.nhnacademy.edu.springframework.greeter;
+package com.nhnacademy.edu.springframework.sender;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 
@@ -7,8 +7,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.FIELD,ElementType.PARAMETER})
+@Target({ElementType.FIELD,ElementType.PARAMETER,ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Qualifier
-public @interface EngLang {
+public @interface SMS {
 }

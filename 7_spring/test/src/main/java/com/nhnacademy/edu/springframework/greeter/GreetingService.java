@@ -1,32 +1,32 @@
 package com.nhnacademy.edu.springframework.greeter;
 
-import jdk.jfr.Frequency;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-
-import java.util.Optional;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 public class GreetingService {
-    private Greeter greeter;
+    private final Greeter greeter;
+
+//    @Autowired
+//    public GreetingService(@Lang Greeter greeter) {
+//        this.greeter = greeter;
+//    }
 
     @Autowired
-    public GreetingService(@Lang Greeter greeter) {
+    public GreetingService(@GreeterQualifier(language = Language.ENGLISH, dummy = false) Greeter greeter) {
         this.greeter = greeter;
     }
-//    @Autowired
-//    public void setKoreanGreeter(@Qualifier("koreanGreeter") Greeter greeter){
-//        System.out.println("setKoreanGreeter invoked!");
-//        this.greeter=greeter;
-//    }
-
-//    @Autowired(required = true)
-//    public void setKoreanGreeter(Optional<Greeter> greeter) {
-//        System.out.println("setGreeter invoked!");
-//        this.greeter = greeter.orElseThrow();
-//    }
-
-
     public void greet() {
         greeter.sayHello();
     }
+
+    public void init() {
+        System.out.println(this.getClass().getCanonicalName()+ ": init!!");
+    }
+
+    public void cleanup() {
+        System.out.println(this.getClass().getCanonicalName()+ ": cleanup!!");
+    }
 }
+
+

@@ -10,25 +10,40 @@
 
     <!-- annotation설정을 위해 추가-->
     <context:annotation-config />
-        <bean id="englishGreeter" class="com.nhnacademy.edu.springframework.greeter.EnglishGreeter" scope="prototype">
-            <qualifier type="com.nhnacademy.edu.springframework.greeter.EngLang"/>
-        </bean>
 
-    <bean id="koreanGreeter" class="com.nhnacademy.edu.springframework.greeter.KoreanGreeter" scope="prototype" >
-        <qualifier type="com.nhnacademy.edu.springframework.greeter.Lang"/>
-    </bean>
-
-    <bean id="greetingService" class="com.nhnacademy.edu.springframework.greeter.GreetingService" >
-    </bean>
-
-    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" />
-
-
-    <!--    <bean id="emailMessageSender" class="com.nhnacademy.edu.springframework.sender.EmailMessageSender" init-method="init" destroy-method="cleanup">-->
+<!--    <bean class="org.springframework.beans.factory.annotation.CustomAutowireConfigurer">-->
+<!--        <property name="customQualifierTypes">-->
+<!--            <set>-->
+<!--                <value>com.nhnacademy.edu.springframework.greeter.GreeterQualifier</value>-->
+<!--            </set>-->
+<!--        </property>-->
 <!--    </bean>-->
 
-    <bean id="messageSendService" class="com.nhnacademy.edu.springframework.sender.MessageSendService" autowire="byName" >
-    </bean>
+<!--    <bean id="englishGreeter" class="com.nhnacademy.edu.springframework.greeter.EnglishGreeter" scope="singleton" init-method="init">-->
+<!--        <qualifier type="com.nhnacademy.edu.springframework.greeter.GreeterQualifier">-->
+<!--            <attribute key="language" value="ENGLISH"/>-->
+<!--            <attribute key="dummy" value="false"/>-->
+<!--        </qualifier>-->
+<!--    </bean>-->
 
+<!--    <bean id="koreanGreeter" class="com.nhnacademy.edu.springframework.greeter.KoreanGreeter" scope="prototype" primary="true" >-->
+<!--        <qualifier type="com.nhnacademy.edu.springframework.greeter.GreeterQualifier">-->
+<!--            <attribute key="language" value="KOREAN"/>-->
+<!--            <attribute key="dummy" value="false"/>-->
+<!--        </qualifier>-->
+<!--    </bean>-->
+
+<!--    <bean id="greetingService" class="com.nhnacademy.edu.springframework.greeter.GreetingService" >-->
+<!--    </bean>-->
+
+<!--  Greeter   -->
+
+
+
+<!--    <bean id="emailMessageSender" class="com.nhnacademy.edu.springframework.sender.EmailMessageSender" init-method="init" destroy-method="cleanup">-->
+<!--    </bean>-->
+<!--    <bean id="smsMessageSender" class="com.nhnacademy.edu.springframework.sender.SmsMessageSender" init-method="init" destroy-method="cleanup">-->
+<!--        <qualifier type = "com.nhnacademy.edu.springframework.sender.SMS"/>-->
+<!--    </bean>-->
 
 </beans>
