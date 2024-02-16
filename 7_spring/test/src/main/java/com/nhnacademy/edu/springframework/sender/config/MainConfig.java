@@ -1,5 +1,8 @@
-package com.nhnacademy.edu.springframework.sender;
+package com.nhnacademy.edu.springframework.sender.config;
 
+import com.nhnacademy.edu.springframework.sender.MessageSendService;
+import com.nhnacademy.edu.springframework.sender.SmsMessageSender;
+import com.nhnacademy.edu.springframework.sender.SmsMessageSenderMatch;
 import org.springframework.context.annotation.*;
 
 @Configuration
