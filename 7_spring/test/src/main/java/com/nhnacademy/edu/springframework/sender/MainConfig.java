@@ -1,4 +1,4 @@
-package com.nhnacademy.edu.springframework.sender.config;
+package com.nhnacademy.edu.springframework.sender;
 
 import com.nhnacademy.edu.springframework.sender.MessageSendService;
 import com.nhnacademy.edu.springframework.sender.SmsMessageSender;
@@ -12,7 +12,7 @@ public class MainConfig {
 
     @Bean(value = "smsMessageSender", initMethod = "init",destroyMethod = "cleanup")
     @Scope("prototype")
-    public SmsMessageSender smsMessageSender(){
+    public MessageSender smsMessageSender(){
         return new SmsMessageSender();
     }
 
