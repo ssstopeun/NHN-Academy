@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form method="post" action="/login">
+    <label th:for="id" th:text="#{id} + ': '"></label>
+    <input type="id" th:name="id" /><br />
+    <label th:for="password" th:text="#{pwd} + ': '"></label>
+    <input type="password" th:name="pwd" /><br />
+    <br />
+    <input type="submit" th:value="#{login}" />
+</form>
+</body>
+</html>

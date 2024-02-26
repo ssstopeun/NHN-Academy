@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Student View</title>
+</head>
+<body>
+<p><span th:text="#{name} + ': '+${student.name}"></span></p>
+<p><span th:text="#{email} + ': '+${student.email}"></span></p>
+<div th:unless="${hideScore eq 'yes'}">
+    <p><span th:text="#{score} + ': '+${student.score}"></span></p>
+    <p><span th:text="#{evaluation} + ': '+${student.evaluation}"></span></p>
+</div>
+<br />
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Student Index</title>
+</head>
+<body>
+<a th:if="${id ne null}" th:text="${id} + ' ' + #{hello}"></a>
+<a th:href="@{'/student/1'}"><h1>StudentViewTest</h1></a>
+<a th:href="@{'/student/register'}"><h1>StudentRegisterTest</h1></a>
+<a th:href="@{'/student/1/modify'}"><h1>StudentModifyTest</h1></a>
+<a th:href="@{'/student/1?hideScore=yes'}"><h1>StudentHideScoreTest</h1></a>
+<br/>
+
+<form action="#" method="get">
+    <button type="submit" name="locale" value="ko">ko</button>
+    <button type="submit" name="locale" value="en">en</button>
+</form>
+
+<br />
+<div th:if="${id ne null}">
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" th:value="#{logout}"/>
+    </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Modify</title>
+</head>
+<body>
+<form method="post" th:action="@{'/student/' + ${student.studentId} + '/modify'}" >
+    <label th:for="name" th:text="#{name} + ': '"></label>
+    <input type="text" id="name" name="name" th:value="${student.name}" /><br />
+    <label for="email" th:text="#{email} + ': '"></label>
+    <input type="text" id="email" name="email" th:value="${student.email}" /><br />
+    <label for="score" th:text="#{score} + ': '"></label>
+    <input type="text" id="score" name="score" th:value="${student.score}" /><br />
+    <label for="evaluation" th:text="#{evaluation} + ': '"></label>
+    <textarea id="evaluation" name="evaluation" rows="10" cols="80" th:text="${student.evaluation}"></textarea><br />
+    <br />
+    <input type="submit" th:value="#{modify}" />
+</form>
+</body>
+</html>

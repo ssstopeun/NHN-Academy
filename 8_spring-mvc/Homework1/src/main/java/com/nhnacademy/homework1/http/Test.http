@@ -1,0 +1,26 @@
+POST http://localhost:8080/students/register HTTP/1.1
+Content-type: application/json
+
+{
+  "name": "jieun",
+  "email": "jeon",
+  "score": 100,
+  "evaluation": "아주굳"
+}
+
+###
+
+GET http://localhost:8080/students/1 HTTP/1.1
+Content-type: application/json
+
+###
+
+PUT http://localhost:8080/students/1 HTTP/1.1
+Content-type: application/json
+
+{
+  "name": "jieun",
+  "email": "easy",
+  "score": 99,
+  "evaluation": "조금굳"
+}

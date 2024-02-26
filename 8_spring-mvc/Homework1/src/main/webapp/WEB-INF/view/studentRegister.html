@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register</title>
+</head>
+<body>
+<form method="post" action="/student/register">
+    <label th:for="name" th:text="#{name} + ': '"></label>
+    <input type="text" id="name" name="name" /><br />
+    <label th:for="email" th:text="#{email}+ ': '"></label>
+    <input type="text" id="email" name="email" /><br />
+    <label for="score" th:text="#{score}+ ': '"></label>
+    <input type="text" id="score" name="score" /><br />
+    <label for="evaluation" th:text="#{evaluation}+ ': '"></label>
+    <textarea id="evaluation" name="evaluation" rows="10" cols="80"></textarea><br />
+    <br />
+    <input type="submit" th:value="#{submit}" />
+</form>
+</body>
+</html>
