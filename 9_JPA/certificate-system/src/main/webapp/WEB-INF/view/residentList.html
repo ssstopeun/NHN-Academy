@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Residence List</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+<h2>주민 목록</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>이름</th>
+      <th>주민등록등본</th>
+      <th>가족관계증명서</th>
+      <th>출생신고서</th>
+      <th>사망신고서</th>
+      <th>발급목록</th>
+      <th>삭제</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="resident : ${residentList}">
+      <td th:text="${resident.name}"></td>
+      <td>
+        <a th:href="@{'/resident/familyRelationshipCertification/'+${resident.residentId}}">가족관계증명서</a>
+      </td>
+      <td>
+        <a th:href="@{'/resident/idCard/'+${resident.residentId}}">주민등록등본</a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+      <td>
+        <a th:if="${#lists.size(resident.certificationList) > 0}"
+           th:href="@{'/resident/certification/' + ${resident.residentId}}">발급목록</a>
+        <span th:unless="${#lists.size(resident.certificationList) > 0}"></span>
+      </td>
+      <td>
+        <form th:action= "@{'/resident/'+${resident.residentId}+'/delete'}" method="post">
+          <button type="submit">삭제</button>
+        </form>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

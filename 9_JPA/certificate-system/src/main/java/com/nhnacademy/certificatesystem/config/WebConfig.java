@@ -9,6 +9,7 @@ import org.springframework.context.MessageSourceAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.http.MediaType;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.*;
@@ -20,15 +21,16 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 
 @EnableWebMvc
+@EnableSpringDataWebSupport
 @Configuration
 @ComponentScan(basePackageClasses = ControllerBase.class)
-public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, MessageSourceAware {
+public class WebConfig implements WebMvcConfigurer, ApplicationContextAware {
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         registry.viewResolver(thymeleafViewResolver());
     }
     private ApplicationContext applicationContext;
-    private MessageSource messageSource;
+
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
@@ -59,10 +61,6 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, Mes
 
     }
 
-    @Override
-    public void setMessageSource(MessageSource messageSource) {
-        this.messageSource = messageSource;
-    }
 
     @Bean
     public ThymeleafViewResolver thymeleafViewResolver() {
@@ -70,7 +68,7 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, Mes
         viewResolver.setTemplateEngine(templateEngine());
         viewResolver.setCharacterEncoding("UTF-8");
         viewResolver.setOrder(1);
-        viewResolver.setViewNames(new String[] { "**","/student/*" });
+        viewResolver.setViewNames(new String[] { "**","/ view/*" });
 
         return viewResolver;
     }
@@ -78,7 +76,6 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, Mes
     public SpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
-        templateEngine.setTemplateEngineMessageSource(messageSource);
 
         return templateEngine;
     }
