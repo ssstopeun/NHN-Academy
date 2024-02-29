@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -13,17 +14,16 @@ import java.time.LocalDate;
 public class Certification {
     @Id
     @Column(name = "certificate_confirmation_number")
-    private long certificationId;
+    private Long certificationId;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "resident_serial_number")
     private Resident resident;
 
+    @Column(name = "certificate_type_code", nullable = false, length = 20)
+    private String certificateTypeCode;
 
-    @Column(name = "certificate_type_code")
-    private String certificationTypeCode;
-
-    @Column(name = "certificate_issue_date")
+    @Column(name = "certificate_issue_date", nullable = false)
     private LocalDate certificateIssueDate;
 
 }

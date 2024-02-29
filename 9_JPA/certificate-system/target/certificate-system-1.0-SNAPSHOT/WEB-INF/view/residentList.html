@@ -40,17 +40,15 @@
     <tr th:each="resident : ${residentList}">
       <td th:text="${resident.name}"></td>
       <td>
-        <a th:href="@{'/resident/famliyRelationshipCertification/'+${resident.residentId}}">가족관계증명서</a>
+        <a th:href="@{'/certification/familyRelationship/'+${resident.residentId}}">가족관계증명서</a>
       </td>
       <td>
-        <a th:href="@{'/resident/idCard/'+${resident.residentId}}">주민등록등본</a>
+        <a th:href="@{'/certification/idCard/'+${resident.residentId}}">주민등록등본</a>
       </td>
       <td>-</td>
       <td>-</td>
       <td>
-        <a th:if="${#lists.size(resident.certificationList) > 0}"
-           th:href="@{'/resident/certification/' + ${resident.residentId}}">발급목록</a>
-        <span th:unless="${#lists.size(resident.certificationList) > 0}"></span>
+        <a th:href="@{'/certification/issuance/' + ${resident.residentId}}">발급목록</a>
       </td>
       <td>
         <form th:action= "@{'/resident/'+${resident.residentId}+'/delete'}" method="post">
@@ -60,5 +58,9 @@
     </tr>
   </tbody>
 </table>
+<div th:with="totalPages = ${totalPages}" class="pagination">
+  <a th:each="pageNumber : ${#numbers.sequence(1, totalPages)}" th:href="@{/resident(page=${pageNumber}-1)}"
+     th:text="${pageNumber} + ' '"></a>
+</div>
 </body>
 </html>

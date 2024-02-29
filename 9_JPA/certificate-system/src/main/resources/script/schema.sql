@@ -2,7 +2,7 @@
 -- 1. 기존 테이블 삭제
 drop table if exists resident;
 -- drop table birth_death_report_resident;
--- drop table family_relationship;
+drop table if exists family_relationship;
 -- drop table household;
 -- drop table household_movement_address;
 -- drop table household_composition_resident;
@@ -13,39 +13,39 @@ drop table if exists certificate_issue;
 
 create table resident
 (
-   resident_serial_number       int(11)      not null,
-   name                         varchar(100) not null,
-   resident_registration_number varchar(300) not null,
-   gender_code                  varchar(20)  not null,
-   birth_date                   datetime     not null,
-   birth_place_code             varchar(20)  not null,
-   registration_base_address    varchar(500) not null,
-   death_date                   datetime     null,
-   death_place_code             varchar(20)  null,
-   death_place_address          varchar(500) null,
-   primary key (resident_serial_number)
+    resident_serial_number       int(11)      not null,
+    name                         varchar(100) not null,
+    resident_registration_number varchar(300) not null,
+    gender_code                  varchar(20)  not null,
+    birth_date                   datetime     not null,
+    birth_place_code             varchar(20)  not null,
+    registration_base_address    varchar(500) not null,
+    death_date                   datetime     null,
+    death_place_code             varchar(20)  null,
+    death_place_address          varchar(500) null,
+    primary key (resident_serial_number)
 );
 
--- create table birth_death_report_resident
--- (
---    resident_serial_number           int(11)     not null,
---    birth_death_type_code            varchar(20) not null,
---    report_resident_serial_number    int(11)     not null,
---    birth_death_report_date          date        not null,
---    birth_report_qualifications_code varchar(20) null,
---    death_report_qualifications_code varchar(20) null,
---    email_address                    varchar(50) null,
---    phone_number                     varchar(20) not null,
---    primary key (resident_serial_number, birth_death_type_code)
--- );
+--  create table birth_death_report_resident
+--  (
+--     resident_serial_number           int(11)     not null,
+--     birth_death_type_code            varchar(20) not null,
+--     report_resident_serial_number    int(11)     not null,
+--     birth_death_report_date          date        not null,
+--     birth_report_qualifications_code varchar(20) null,
+--     death_report_qualifications_code varchar(20) null,
+--     email_address                    varchar(50) null,
+--     phone_number                     varchar(20) not null,
+--     primary key (resident_serial_number, birth_death_type_code,report_resident_serial_number)
+--  );
 --
--- create table family_relationship
--- (
---    base_resident_serial_number   int(11)     not null,
---    family_resident_serial_number int(11)     not null,
---    family_relationship_code      varchar(20) not null,
---    primary key (base_resident_serial_number, family_resident_serial_number)
--- );
+create table family_relationship
+(
+    base_resident_serial_number   int(11)     not null,
+    family_resident_serial_number int(11)     not null,
+    family_relationship_code      varchar(20) not null,
+    primary key (base_resident_serial_number, family_resident_serial_number)
+);
 --
 -- create table household
 -- (
@@ -78,11 +78,11 @@ create table resident
 --
 create table certificate_issue
 (
-   certificate_confirmation_number bigint      not null,
-   resident_serial_number          int         not null,
-   certificate_type_code           varchar(20) not null,
-   certificate_issue_date          date        not null,
-   primary key (certificate_confirmation_number)
+    certificate_confirmation_number bigint      not null,
+    resident_serial_number          int         not null,
+    certificate_type_code           varchar(20) not null,
+    certificate_issue_date          date        not null,
+    primary key (certificate_confirmation_number)
 );
 
 
@@ -105,23 +105,23 @@ commit;
 -- commit;
 --
 --
--- -- 5. family_relationship 테이블 데이터 추가
--- insert into family_relationship values(1, 2, '자녀');
--- insert into family_relationship values(2, 1, '부');
--- insert into family_relationship values(2, 3, '배우자');
--- insert into family_relationship values(2, 4, '자녀');
--- insert into family_relationship values(3, 2, '배우자');
--- insert into family_relationship values(3, 4, '자녀');
--- insert into family_relationship values(4, 2, '부');
--- insert into family_relationship values(4, 3, '모');
--- insert into family_relationship values(4, 5, '배우자');
--- insert into family_relationship values(4, 7, '자녀');
--- insert into family_relationship values(5, 4, '배우자');
--- insert into family_relationship values(5, 7, '자녀');
--- insert into family_relationship values(7, 4, '부');
--- insert into family_relationship values(7, 5, '모');
---
--- commit;
+-- 5. family_relationship 테이블 데이터 추가
+insert into family_relationship values(1, 2, '자녀');
+insert into family_relationship values(2, 1, '부');
+insert into family_relationship values(2, 3, '배우자');
+insert into family_relationship values(2, 4, '자녀');
+insert into family_relationship values(3, 2, '배우자');
+insert into family_relationship values(3, 4, '자녀');
+insert into family_relationship values(4, 2, '부');
+insert into family_relationship values(4, 3, '모');
+insert into family_relationship values(4, 5, '배우자');
+insert into family_relationship values(4, 7, '자녀');
+insert into family_relationship values(5, 4, '배우자');
+insert into family_relationship values(5, 7, '자녀');
+insert into family_relationship values(7, 4, '부');
+insert into family_relationship values(7, 5, '모');
+
+commit;
 --
 --
 -- -- 6. household 테이블 데이터 추가

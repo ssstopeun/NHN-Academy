@@ -1,6 +1,7 @@
 package com.nhnacademy.certificatesystem.repository;
 
 
+import com.nhnacademy.certificatesystem.entity.FamilyRelationship;
 import com.nhnacademy.certificatesystem.entity.Resident;
 import org.springframework.data.domain.Example;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -13,12 +14,11 @@ public interface ResidentRepository extends JpaRepository<Resident, Long> {
     @Override
     ArrayList<Resident> findAll();
 
-    @Override
-    Optional<Resident> findById(Long residentId);
+    Resident findByResidentId(int residentId);
 
     boolean existsByResidentId(int residentId);
 
-    @Transactional
+//    @Transactional
     void deleteByResidentId(int residentId);
 
 

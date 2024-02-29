@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Family Relationship Certification</title>
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-color: #ccc;
+            border-spacing: 0;
+        }
+
+        .tg td {
+            background-color: #fff;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 1px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 20px;
+            word-break: normal;
+        }
+
+        .tg th {
+            background-color: #f0f0f0;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 1px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            padding: 10px 20px;
+            word-break: normal;
+            text-align: center;
+        }
+
+        .tg .tg-c3ow {
+            border-color: inherit;
+            text-align: center;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+<table class="tg">
+    <thead>
+    <tr>
+        <th class="tg-c3ow" colspan="5">가족관계증명서<br>(발급일:<span th:text = "${familyCertificationLayer.issueDate}" />, 증명서확인번호:<span th:text = "${familyCertificationLayer.certificationId}"/>)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th class="tg-baqh" colspan="2">등록기준지<br>(본적)</th>
+
+        <td class="tg-baqh" colspan="3" th:text="${familyCertificationLayer.address}"></td>
+    </tr>
+    <tr>
+        <th class="tg-baqh">구분</th>
+        <th class="tg-baqh">성명</th>
+        <th class="tg-baqh">출생연월일</th>
+        <th class="tg-baqh">주민등록번호</th>
+        <th class="tg-baqh">성별</th>
+    </tr>
+
+    <tr th:each="familyInform : ${familyInforms}">
+        <td class="tg-baqh" th:text="${familyInform.relation}"></td>
+        <td class="tg-baqh" th:text="${familyInform.familyName}"></td>
+        <td class="tg-baqh" th:text="${familyInform.birthDate}"></td>
+        <td class="tg-baqh" th:text="${familyInform.resistrationNumber}"></td>
+        <td class="tg-baqh" th:text="${familyInform.gender}"></td>
+    </tr>
+
+    </tbody>
+</table>
+</body>
+</html>

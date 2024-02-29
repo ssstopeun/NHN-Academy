@@ -1,45 +1,39 @@
 package com.nhnacademy.certificatesystem.controller;
 
-import com.nhnacademy.certificatesystem.domain.ResidentListDTO;
 import com.nhnacademy.certificatesystem.entity.Resident;
 import com.nhnacademy.certificatesystem.service.CertificationService;
 import com.nhnacademy.certificatesystem.service.ResidentService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Slf4j
 @Controller
 @RequestMapping("/resident")
 public class ResidentListController {
     private final ResidentService residentService;
-    private final CertificationService certificationService;
 
-    public ResidentListController(ResidentService residentService, CertificationService certificationService){
+    public ResidentListController(ResidentService residentService){
         this.residentService = residentService;
-        this.certificationService = certificationService;
     }
-
-    @ModelAttribute("residentList")
-    public ArrayList<Resident> getResident() throws Exception {
-        return residentService.getAllResident();
-    }
-
 
 
     @GetMapping
-    public String residentListForm(@ModelAttribute ArrayList<Resident> residentList,
-                                   ModelMap modelMap){
-        ArrayList<ResidentListDTO> result = new ArrayList<>();
-        for(Resident resident : residentList){
-            ResidentListDTO residentListDTO = ResidentListDTO.toDTO(resident);
-            result.add(residentListDTO);
-        }
+    public String residentListForm(@PageableDefault(size = 5) Pageable pageable, ModelMap modelMap){
+        Page<Resident> residentPage = residentService.getResidents(pageable);
+        List<Resident> residents = residentPage.getContent();
+        int totalPages = residentPage.getTotalPages();
 
-        modelMap.put("residentList",result);
+        modelMap.addAttribute("residentList", residents);
+        modelMap.addAttribute("totalPages", totalPages);
+
         return "residentList";
     }
 

@@ -24,4 +24,8 @@ public class CertificationService {
     public boolean exists(Integer residentId){
         return certificationRepository.existsByResidentResidentId(residentId);
     }
+
+    public Long getFamilyCertificationId() {
+       return certificationRepository.getLastFamilyCertificationId()+1;
+    }
 }

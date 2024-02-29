@@ -68,7 +68,7 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware {
         viewResolver.setTemplateEngine(templateEngine());
         viewResolver.setCharacterEncoding("UTF-8");
         viewResolver.setOrder(1);
-        viewResolver.setViewNames(new String[] { "**","/ view/*" });
+        viewResolver.setViewNames(new String[] { "**","/view/*" });
 
         return viewResolver;
     }
